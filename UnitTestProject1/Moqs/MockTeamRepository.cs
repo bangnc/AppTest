@@ -12,6 +12,7 @@ namespace UnitTestProject1.Moqs
     {
         public MockTeamRepository MockGetByID(Team result)
         {
+            // Nhanh 1
             Setup(x => x.GetById(It.IsAny<int>())).Returns(result);
             return this;
         }
